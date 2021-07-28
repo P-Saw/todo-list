@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+</head>
+<body class="light-theme">
+  <header>
+    <div class="logo-switch">
+      <h1>TODO</h1>
+      <div class="switch"></div>
+    </div>
+  </header>
+  <main>
+    <form action="" class="input-form">
+      <button>></button>
+      <input data-input placeholder="Create a new todo..."></input>
+    </form>
+    <ul class="todo-list">
+    </ul>
+    <div class="interactive-section">
+      <span class="int-item"><span class="items-left">0</span> items left</span>
+      <div class="sort-section">
+        <span data-all class="sort-item active">All</span>
+        <span data-active class="sort-item">Active</span>
+        <span data-completed class="sort-item">Completed</span>
+      </div>
+      <span class="int-item clear">Clear Completed</span>
+    </div>
+    <div class="drag-info">
+      <p>Drag and drop to reorder list</p>
+    </div>
+  </main>
+</body>
+</html>
