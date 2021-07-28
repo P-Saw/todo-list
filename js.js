@@ -130,5 +130,6 @@ completedBtn.addEventListener('click', ()=>{
 
 /* DRAGGING */
 new Sortable(todoList, {
-    animation: 150
+    animation: 150,
+    filter: 'div'
 });

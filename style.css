@@ -246,8 +246,3 @@ main{
         opacity: 1;
     }
 }
-@media (orientation: landscape){
-    main{
-        margin: 0.5rem auto 0 auto;
-    }
-}
