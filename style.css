@@ -78,7 +78,7 @@ header{
 /* MAIN */
 main{
     width: 90%;
-    margin: -4rem auto 0 auto;
+    margin: -10% auto 0 auto;
     max-width: 700px;
 }
 
@@ -157,7 +157,7 @@ main{
     border: none;
 }
 .task{
-    max-width: 85%;
+    max-width: 70%;
     flex-grow: 1;
     margin: 0;
     color: var(--normal-text);
@@ -236,10 +236,18 @@ main{
         width: unset;
         padding: 0;
     }
+    .task{
+        max-width: 85%;
+    }
     .delete{
         opacity: 0;
     }
     .todo-list-item:hover>.delete{
         opacity: 1;
+    }
+}
+@media (orientation: landscape){
+    main{
+        margin: 0.5rem auto 0 auto;
     }
 }
