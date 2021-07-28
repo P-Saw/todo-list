@@ -138,9 +138,7 @@ main{
 .todo-list-item:first-child{
     border-radius: 10px 10px 0 0;
 }
-.todo-list-item:hover>.delete{
-    opacity: 1;
-}
+
 .toggle{
     border: 1px var(--light-items) solid;
     border-radius: 50%;
@@ -159,10 +157,12 @@ main{
     border: none;
 }
 .task{
+    max-width: 85%;
     flex-grow: 1;
     margin: 0;
     color: var(--normal-text);
-    word-wrap: break-word;
+    word-wrap: break-all;
+    hyphens: auto;
     overflow-wrap: break-word;
 }
 .task.done{
@@ -174,9 +174,7 @@ main{
     height: 2rem;
     background: url(./images/icon-cross.svg) no-repeat center center;
     cursor: pointer;
-    opacity: 0;
     flex-shrink: 0;
-
 }
 
 /* INTERACTIVE SECTION */
@@ -237,5 +235,11 @@ main{
         bottom: 0;
         width: unset;
         padding: 0;
+    }
+    .delete{
+        opacity: 0;
+    }
+    .todo-list-item:hover>.delete{
+        opacity: 1;
     }
 }
